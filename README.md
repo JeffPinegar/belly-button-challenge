@@ -1,10 +1,10 @@
 <h1> Jeff Pinegar </h1>
 jeffpinegar1@gmail.com <br>
 717-982-0515
-<hr>
-# belly-button-challenge
-Module 14 Challenge  Belly Button Biodiversity dataset interactive visualization
+<br><br>
 
+Module 14 Challenge: Belly Button Biodiversity dataset interactive visualization
+<hr>
 
 <h1> Overview</h1>
 In this challenge we construct a dashboard base on data from an internet based json.  The dashboard includes 3 charts, (1) bar chart, (2) bubble chart and (3) a gauge chart.  To improve maintainability the follow was done:
