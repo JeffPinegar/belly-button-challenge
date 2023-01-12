@@ -8,12 +8,23 @@
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+  <!-- Load my java script -->
   <script src="https://d3js.org/d3.v5.min.js" defer></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js" defer></script>
-  <!-- <script src="./static/js/OnClickTestOnly.js" defer></script> -->
-  <!-- <script src="./static/js/plots.js"defer ></script> -->
-  <script src="./static/js/data05.js" defer></script>
-  <script src="./static/js/bonus.js" defer ></script>
+  <!-- I split importing data and plotting into 2 javafiles, moved them to the top and defer the load. -->
+  <!-- <script src="./static/js/plots.js" defer></script> -->
+  <!-- <script src="./static/js/bonus.js" defer></script>  -->
+
+
+
+
+
+
+  <script src="./static/js/data04.js" defer ></script>  <!--javascript that reads the JSON from a file that was capture using python -->
+
+
+
+
 
 </head>
 
@@ -30,13 +41,24 @@
       <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>    
+          <!-- This is where the data selector is located -->
+          <!-- The value returned is going to be an id -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
+
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
-          <div id="sample-metadata" class="panel-body"></div>
+          <div id="sample-metadata" class="panel-body">
+            <div class = "panel_id"></div>
+            <div class = "panel_ethnicity"></div>
+            <div class = "panel_gender"></div>
+            <div class = "panel_loc"></div>            
+            <div class = "panel_bbtype"></div>
+            <div class = "panel_wfreq"></div>
+          </div>
+
         </div>
       </div>
       <div class="col-md-5">
@@ -54,7 +76,6 @@
   </div>
 
 
-  
 </body>
 
 </html>
