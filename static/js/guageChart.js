@@ -1,14 +1,16 @@
+/* eslint-disable camelcase */
+/* eslint-disable linebreak-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
 /* eslint-disable linebreak-style */
 // eslint-disable-next-line linebreak-style
 
 // Jeff Pinegar
-//
-
+// Module 14 Challenge
+// Belly Button Biodiversity Dashboad
+// January 12, 2023
 
 // -----------------------------------  Gauge Chart --------------------------------------
-
 function gaugeChart(myID) {
   const demo_meta_data = data.metadata;
   const meta_data = demo_meta_data.filter((m) => m.id == myID)[0];
@@ -58,9 +60,7 @@ function gaugeChart(myID) {
       50/9,
       50],
 
-    /*
-Construction of the scale for the gauge
-*/
+    // Construction of the scale for the gauge
     textinfo: 'text',
     rotation: 90,
     textposition: 'inside', // set the postion of the scale text
